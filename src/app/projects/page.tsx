@@ -26,6 +26,7 @@ export default function Projects() {
 
     useEffect(() => {
         getProjects();
+        //eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const [projectsArray, setProjectsArray] = useState<Project[]>([]);
