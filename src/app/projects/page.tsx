@@ -1,9 +1,8 @@
 'use client'
-import Header from "@/Components/header";
+import Header from "@/components/header";
 import projects from "@/data/projects.json";
 import { useEffect, useState } from "react";
-import Image from "next/image";
-import Footer from "@/Components/footer";
+import Footer from "@/components/footer";
 
 export default function Projects() {
 

@@ -3,7 +3,7 @@
 
 export default function Header() {
     return (
-        <div className="w-screen flex" id="header">
+        <div className="w-screen flex">
             <div className="w-4/6 m-3 flex justify-between mx-auto max-sm:w-11/12">
                 <a href="/" id="header">
                     Home
