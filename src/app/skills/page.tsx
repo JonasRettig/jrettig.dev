@@ -1,3 +1,4 @@
+import Footer from "@/Components/footer";
 import Header from "@/Components/header";
 
 export default function Skills() {
@@ -33,6 +34,7 @@ export default function Skills() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

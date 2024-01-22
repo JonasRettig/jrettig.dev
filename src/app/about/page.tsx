@@ -1,4 +1,5 @@
 import Header from "@/Components/header";
+import Footer from "@/Components/footer";
 
 export default function About() {
     return (
@@ -16,6 +17,7 @@ export default function About() {
                 </div>
                 <embed src="Lebenslauf.pdf" className="w-4/6 h-screen" />
             </div>
+            <Footer/>
         </div>
     )
 }

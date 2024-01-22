@@ -3,6 +3,7 @@ import Header from "@/Components/header";
 import projects from "@/data/projects.json";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Footer from "@/Components/footer";
 
 export default function Projects() {
 
@@ -99,6 +100,7 @@ export default function Projects() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

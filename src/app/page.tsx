@@ -1,3 +1,4 @@
+import Footer from "@/Components/footer";
 import Header from "@/Components/header";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
           Meinen Lebenslauf und andere Interssante Dinge über mich findest du <a href="/about">hier</a>.
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

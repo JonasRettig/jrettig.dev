@@ -32,6 +32,6 @@ body {
   }
 }
 
-a:not(#header) {
+a:not(#header, #footer) {
   color: lightblue;
 }
