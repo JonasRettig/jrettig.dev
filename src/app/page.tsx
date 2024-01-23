@@ -9,15 +9,41 @@ import { useEffect } from "react";
 
 export default function Home() {
 
+  async function typeWriter(messageToShow:string, targetElement:string, timeBetween:number, currentPos = 0) {
+    return new Promise((resolve, reject) => {
+      if (currentPos < messageToShow.length) {
+        document.getElementById(targetElement).innerHTML += messageToShow.charAt(currentPos);
+        currentPos++;
+        setTimeout(function() { 
+          resolve(typeWriter(messageToShow, targetElement, timeBetween, currentPos)); 
+        }, timeBetween);
+      } else if (currentPos === messageToShow.length) {
+        resolve(true);
+      }
+    });
+  }
+
+  useEffect(() => {
+    orchestrateTypewriter()
+  }, [])
+
+  async function orchestrateTypewriter() {
+    if(document.getElementById("textScroll").innerHTML === "") {
+      await(typeWriter("Hallo, mein Name ist Jonas", "textScroll", 100))
+      .then(() => {
+        return typeWriter("Ich ❤️ Programmieren und neue Dinge zu lernen.", "textScroll2", 75)
+      })
+    }
+  }
+
+
   return (
     <div className="h-screen">
       <Header highlight={"home"}/>
       <div className="flex items-center justify-center h-[88%] max-sm:items-start max-sm:mt-4">
         <div className="w-4/6 flex flex-col justify-self-center mx-auto max-sm:w-11/12">
-          <h1 className="text-6xl relative w-[max-content] before:absolute before:inset-0 before:animate-typewriter before:bg-darkBG max-sm:before:animate-none max-sm:bg-transparent max-sm:before:relative max-sm:text-4xl">Hallo, <br/> mein Name ist Jonas</h1>
-          <div className="text-4xl max-sm:text-xl">
-            Ich liebe es zu programmieren und neue Dinge zu lernen.
-          </div>
+          <h1 id="textScroll" className="text-6xl max-sm:text-4xl min-h-20 max-h-20"/>
+          <div id="textScroll2" className="text-4xl max-sm:text-xl min-h-20 max-h-20"/>
           <div className="mt-10 flex flex-row mx-auto justify-evenly w-full max-sm:grid max-sm:grid-cols-2 max-sm:w-11/12 max-sm:justify-items-center max-sm:gap-4">
             <a id="home" href="/projects" className="text-8xl flex flex-col text-center hover:text-orangeHighlight w-1/6 justify-center items-center" >
               <MdArtTrack/>
