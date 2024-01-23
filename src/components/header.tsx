@@ -10,7 +10,7 @@ export default function Header({highlight}: {highlight: string}) {
                     style={{
                         color: highlight === 'home' ? '#c3602c' : 'default',
                         borderBottom: highlight === 'home' ? '2px solid #c3602c' : 'none'
-                }}>
+                    }}>
                     Home
                 </a>
                 <div className="w-2/6 flex justify-around max-sm:w-4/6">
