@@ -3,8 +3,14 @@
         "id": 1,
         "name": "Sozialkompass",
         "timeframe": "September 2022 - heute",
-        "image": "Sozialkompass.png",
-        "imageAlt": "Die Startseite des Sozialkompass.",
+        "image": [{
+            "path":"Sozialkompass.png",
+            "alt": "Die Startseite des Sozialkompass."
+            },
+            {
+                "path":"Website.png",
+                "alt": "Die Startseite des Sozialkompass."
+            }],
         "description": ["Der Sozialkompass ist eine Webseite, welche Menschen in sozialen Notlagen hilft, sich über ihnen zustehende Sozialleistungen zu informieren. ",
                         "Das Projekt startete im Jahr 2022 im Rahmen eines Projektseminars an der Universität Münster und wird seit April 2023 ehrenamtlich weitergeführt.",
                         "Wir haben beim MÜNSTERHACK 2022 den zweiten Platz und Mentorenpreis gewonnen. Des Weiteren wurden wir in das Solution-Enabler-Programm des Hackathons aufgenommen und haben beim MÜNSTERHACK 2023 den Nachgehackt-Preis für das am besten weitergeführte Projekt gewonnen."
@@ -26,8 +32,10 @@
         "id": 2,
         "name": "Infosdisplay für das OVG",
         "timeframe": "Juli 2023 - November 2023",
-        "image": "OVGDisplay.JPEG",
-        "imageAlt": "Die Anzeige in der Haupthalle des Oberverwaltungsgerichts.",
+        "image": [{
+            "path":"OVGDisplay.JPEG",
+            "alt": "Die Anzeige in der Haupthalle des Oberverwaltungsgerichts."
+            }],
         "description": ["Für meinen Arbeitgeber, das Oberverwaltungsgericht für das Land Nordrhein-Westfalen in Münster, habe ich eine Informationsanzeige, welche im Eingangsbereich und in der Kantine des Gerichts aufgestellt ist, entwickelt.",
                         "Die Anzeige zeigt aktuelle Nachrichten, die Wettervorhersage und die aktuellen Termine des Gerichts an."
                         ],
@@ -44,7 +52,10 @@
         "id": 3,
         "name": "Persönliche Webseite",
         "timeframe": "Januar 2024",
-        "image": "Sozialkompass.png",
+        "image": [{
+            "path":"Website.png",
+            "alt": "Die Startseite meiner Webseite."
+            }],
         "imageAlt": "",
         "description": ["Ich habe diese Webseite mit dem Ziel erstellt, meine Projekte und mich selbst vorzustellen."],
         "myWork": ["Ich habe das Projekt vollständig alleine designed und entwickelt."],
@@ -64,8 +75,10 @@
         "id": 4,
         "name": "Hin und Weg",
         "timeframe": "September 2023",
-        "image": "Sozialkompass.png",
-        "imageAlt": "",
+        "image": [{
+            "path":"Website.png",
+            "alt": "Die Startseite meiner Webseite."
+            }],
         "description": ["Im Rahmen des MÜNSTERHACK 2023 habe ich mit meinem Team eine App entwickelt, welche Abgabestellen für nicht mehr benötigte Gegenstände anzeigt. ",
                         "Ziel ist es zu verhindern, dass diese Gegenstände weggeworfen werden."
                     ],

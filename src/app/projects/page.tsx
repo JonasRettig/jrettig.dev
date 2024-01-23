@@ -3,6 +3,8 @@ import Header from "@/components/header";
 import projects from "@/data/projects.json";
 import { useEffect, useState } from "react";
 import Footer from "@/components/footer";
+import ImageCarousel from "@/components/imageCarousel";
+import Image from "next/image";
 
 export default function Projects() {
 
@@ -10,17 +12,21 @@ export default function Projects() {
         id: number,
         name: string,
         timeframe: string,
-        image: string,
-        imageAlt: string,
+        image: Image[],
         description: string[],
         technologies: string[],
         myWork: string[],
-        links?: link[]
+        links?: Link[]
     }
 
-    interface link {
+    interface Link {
         url: string,
         name: string
+    }
+
+    interface Image{
+        path: string,
+        alt: string
     }
 
     useEffect(() => {
@@ -52,7 +58,7 @@ export default function Projects() {
                                     </div>
                                     <div className="flex max-sm:flex-col">
                                         <div className="mt-2 mr-2 w-3/6 max-sm:w-full">
-                                            <img src={`/${project.image}`} alt={project.imageAlt} className="object-contain" />
+                                            <ImageCarousel images={project.image}/>
                                         </div>
                                         <div className="mt-1 flex w-2/6 content-center max-sm:w-full">
                                             {project.description}
