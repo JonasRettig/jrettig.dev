@@ -5,13 +5,12 @@ export default function TextScrollHome() {
 
     useEffect(() => {
         orchestrateTypewriter();
-        console.log(document.getElementById("firstText"))
     }, [])
 
     async function typeWriter(messageToShow:string, targetElement:string, timeBetween:number, currentPos = 0) {
         return new Promise((resolve, reject) => {
         if (currentPos < messageToShow.length) {
-            document.getElementById(targetElement).innerHTML += messageToShow.charAt(currentPos);
+            document.getElementById(targetElement)!.innerHTML += messageToShow.charAt(currentPos);
             currentPos++;
             setTimeout(function() { 
             resolve(typeWriter(messageToShow, targetElement, timeBetween, currentPos)); 
@@ -23,7 +22,7 @@ export default function TextScrollHome() {
     }
 
     async function orchestrateTypewriter() {
-        if(document.getElementById("textScroll").innerHTML === "") {
+        if(document.getElementById("textScroll")!.innerHTML === "") {
         await(typeWriter("Hallo, mein Name ist Jonas", "textScroll", 100))
         .then(() => {
             return typeWriter("Ich ❤️ Programmieren und neue Dinge zu lernen.", "textScroll2", 75)
