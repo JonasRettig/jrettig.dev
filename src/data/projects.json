@@ -10,7 +10,7 @@
                         "Wir haben beim MÜNSTERHACK 2022 den zweiten Platz und Mentorenpreis gewonnen. Des Weiteren wurden wir in das Solution-Enabler-Programm des Hackathons aufgenommen und haben beim MÜNSTERHACK 2023 den Nachgehackt-Preis für das am besten weitergeführte Projekt gewonnen."
                         ],
         "myWork": ["PLACEHOLDER."],
-        "technologies": ["React.js", "Next.js", "Tailwind CSS", "TypeScript", "MongoDB", "Git", "Jira", "Figma"],
+        "technologies": ["React.js", "Next.js", "TailwindCSS", "TypeScript", "MongoDB", "Git", "Jira", "Figma"],
         "links": [
             {
                 "name": "Webseite",
@@ -48,7 +48,17 @@
         "imageAlt": "",
         "description": ["Ich habe diese Webseite mit dem Ziel erstellt, meine Projekte und mich selbst vorzustellen."],
         "myWork": ["Ich habe das Projekt vollständig alleine designed und entwickelt."],
-        "technologies": ["React.js", "Tailwind CSS", "Git", "TypeScript", "Next.js"]
+        "technologies": ["React.js", "TailwindCSS", "Git", "TypeScript", "Next.js"],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/JonasRettig/jrettig.dev"
+            },
+            {
+                "name": "Webseite",
+                "url": "/"
+            }
+        ]
     },
     "4":{
         "id": 4,
