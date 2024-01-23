@@ -77,8 +77,9 @@ export default function Projects() {
                                             <b> Genutzte Technologien: </b>
                                             <div className="flex flex-row max-sm:flex-col" >
                                                 {project.technologies.map((technology, index) => (
-                                                    <div key={index} className="mr-2 text">
+                                                    <div key={index} className="mr-1 text flex">
                                                         {technology}
+                                                    <div key={index} className={`ml-1 ${index !== project.technologies.length - 1 ? 'border-r-2' : ''} max-sm:border-r-0`}/>
                                                     </div>
                                                 ))}
                                             </div>
@@ -89,10 +90,11 @@ export default function Projects() {
                                                     <b> Links: </b>
                                                     <div className="flex flex-row max-sm:flex-col">
                                                         {project.links.map((link, index) => (
-                                                            <div key={index} className="mr-2">
+                                                            <div key={index} className="mr-1 flex">
                                                                 <a href={link.url} target="_blank">
                                                                     {link.name}
                                                                 </a>
+                                                                <div key={index} className={`ml-1 ${index !== project.links!.length - 1 ? 'border-r-2' : ''} max-sm:border-r-0`}/>
                                                             </div>
                                                         ))}
                                                     </div>

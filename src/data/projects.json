@@ -16,7 +16,7 @@
                         "Wir haben beim MÜNSTERHACK 2022 den zweiten Platz und Mentorenpreis gewonnen. Des Weiteren wurden wir in das Solution-Enabler-Programm des Hackathons aufgenommen und haben beim MÜNSTERHACK 2023 den Nachgehackt-Preis für das am besten weitergeführte Projekt gewonnen."
                         ],
         "myWork": ["PLACEHOLDER."],
-        "technologies": ["React.js", "Next.js", "TailwindCSS", "TypeScript", "MongoDB", "Git", "Jira", "Figma"],
+        "technologies": ["React.js", "Next.js", "Tailwind CSS", "TypeScript", "MongoDB", "Git", "Jira", "Figma"],
         "links": [
             {
                 "name": "Webseite",
@@ -50,6 +50,31 @@
     },
     "3":{
         "id": 3,
+        "name": "Design Thinking Vertiefungsmodul",
+        "timeframe": "Juli 2023",
+        "image": [{
+            "path":"Website.png",
+            "alt": "Die Startseite meiner Webseite."
+            }],
+        "description": ["Ein Vertiefungsmodul an der Universität Münster, welches sich mit dem Thema Design Thinking beschäftigt. ",
+                        "Das Seminar fand in Kooperation mit der University of West Georgia und der Georgia College & State University als Erasmus+ Projekt statt. ",
+                        "Im Rahmen des Moduls haben wir vor Ort (Atlanta, USA) mit den Praxispartnern Southwire und Celonis eine reales Problem bearbeitet."
+                    ],
+        "myWork": ["Ich habe die Kartenansicht für diese App entwickelt. Die Karte zeigt die Abgabestellen an und wird je nach Zoom Level dynamisch mit mit Daten bereichert."],
+        "technologies": ["Design Thinking", "Englisch", "Kollaboration in internationalen Teams", "Stakeholderkommuikation"],
+        "links": [
+            {
+                "name": "Projektblog",
+                "url": "https://www.dt-seminar.net/"
+            },
+            {
+                "name": "Blogpost der GCSU",
+                "url": "https://frontpage.gcsu.edu/node/14943"
+            }
+        ]
+    },
+    "4":{
+        "id": 4,
         "name": "Persönliche Webseite",
         "timeframe": "Januar 2024",
         "image": [{
@@ -59,7 +84,7 @@
         "imageAlt": "",
         "description": ["Ich habe diese Webseite mit dem Ziel erstellt, meine Projekte und mich selbst vorzustellen."],
         "myWork": ["Ich habe das Projekt vollständig alleine designed und entwickelt."],
-        "technologies": ["React.js", "TailwindCSS", "Git", "TypeScript", "Next.js"],
+        "technologies": ["React.js", "Tailwind CSS", "Git", "TypeScript", "Next.js"],
         "links": [
             {
                 "name": "GitHub",
@@ -71,8 +96,8 @@
             }
         ]
     },
-    "4":{
-        "id": 4,
+    "5":{
+        "id": 5,
         "name": "Hin und Weg",
         "timeframe": "September 2023",
         "image": [{
