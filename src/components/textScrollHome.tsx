@@ -23,9 +23,9 @@ export default function TextScrollHome() {
 
     async function orchestrateTypewriter() {
         if(document.getElementById("textScroll")!.innerHTML === "") {
-        await(typeWriter("Hallo, mein Name ist Jonas", "textScroll", 100))
+        await(typeWriter("Moin, ich bin Jonas", "textScroll", 100))
         .then(() => {
-            return typeWriter("Ich ❤️ Programmieren und neue Dinge lernen", "textScroll2", 75)
+            return typeWriter("Entwickler mit ❤️ aus Münster", "textScroll2", 75)
         })
         }
     }
