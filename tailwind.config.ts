@@ -15,7 +15,18 @@ const config: Config = {
       },
       colors: {
         "orangeHighlight" : "#c3602c",
+        "darkBG" : "rgb(30, 30, 30)",
       },
+      animation: {
+        typewriter: "typewriter 2s steps(11) forwards"
+      },
+      keyframes: {
+        typewriter: {
+          to: {
+            left: "100%"
+          }
+        }
+      }
     },
   },
   plugins: [],
