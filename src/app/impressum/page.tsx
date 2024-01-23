@@ -4,7 +4,7 @@ import Header from "@/components/header";
 export default function Impressum() {
     return (
         <div>
-            <Header/>
+            <Header highlight="false"/>
             <div className="w-4/6 flex flex-col justify-self-center mx-auto max-sm:w-11/12">
                 <h1>Impressum</h1>
                 <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>

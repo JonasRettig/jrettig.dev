@@ -15,7 +15,7 @@ export default function About() {
                 <div>
                     Mein ganzer Lebenslauf ist wie folgt:
                 </div>
-                <embed src="Lebenslauf.pdf" className="w-4/6 h-screen" />
+                <embed src="Lebenslauf.pdf" className="w-4/6 h-screen max-sm:w-full" />
             </div>
             <Footer/>
         </div>

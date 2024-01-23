@@ -4,7 +4,7 @@ import Header from "@/components/header";
 export default function Datenschutzerklaerung() {
     return (
         <div>
-            <Header />
+            <Header highlight="false" />
             <div className="w-4/6 flex flex-col justify-self-center mx-auto max-sm:w-11/12">
                 <h1>Datenschutz&shy;erkl&auml;rung</h1>
                 <h2>1. Datenschutz auf einen Blick</h2>

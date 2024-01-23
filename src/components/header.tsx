@@ -6,7 +6,7 @@ export default function Header({highlight}: {highlight: string}) {
                 <a 
                     href="/" 
                     id="header" 
-                    className={"hover:text-orangeHighlight"}
+                    className={"hover:text-orangeHighlight text-2xl max-sm:text-base"}
                     style={{
                         color: highlight === 'home' ? '#c3602c' : 'default',
                         borderBottom: highlight === 'home' ? '2px solid #c3602c' : 'none'
@@ -17,7 +17,7 @@ export default function Header({highlight}: {highlight: string}) {
                     <a 
                         href="/projects" 
                         id="header" 
-                        className={"hover:text-orangeHighlight"}
+                        className={"hover:text-orangeHighlight text-2xl max-sm:text-base"}
                         style={{
                             color: highlight === 'projects' ? '#c3602c' : 'default',
                             borderBottom: highlight === 'projects' ? '2px solid #c3602c' : 'none'
@@ -27,7 +27,7 @@ export default function Header({highlight}: {highlight: string}) {
                     <a 
                         href="/skills" 
                         id="header" 
-                        className={"hover:text-orangeHighlight"}
+                        className={"hover:text-orangeHighlight text-2xl max-sm:text-base"}
                         style={{
                             color: highlight === 'skills' ? '#c3602c' : 'default',
                             borderBottom: highlight === 'skills' ? '2px solid #c3602c' : 'none'
@@ -37,7 +37,7 @@ export default function Header({highlight}: {highlight: string}) {
                     <a 
                         href="/about" 
                         id="header" 
-                        className={"hover:text-orangeHighlight"}
+                        className={"hover:text-orangeHighlight text-2xl max-sm:text-base"}
                         style={{
                             color: highlight === 'about' ? '#c3602c' : 'default',
                             borderBottom: highlight === 'about' ? '2px solid #c3602c' : 'none'
