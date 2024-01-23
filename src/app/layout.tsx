@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
-const ibm = IBM_Plex_Sans({ weight: "400", subsets: ["latin"]});
 
 export const metadata: Metadata = {
   title: "Jonas Rettig",
@@ -16,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ibm.className}>{children}</body>
+      <body className={"font-mono"}>{children}</body>
     </html>
   );
 }

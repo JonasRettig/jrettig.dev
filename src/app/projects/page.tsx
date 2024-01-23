@@ -1,40 +1,40 @@
-'use client'
 import Header from "@/components/header";
 import projects from "@/data/projects.json";
-import { useEffect, useState } from "react";
 import Footer from "@/components/footer";
-
-export default function Projects() {
+import ImageCarousel from "@/components/imageCarousel";
 
     interface Project {
         id: number,
         name: string,
         timeframe: string,
-        image: string,
-        imageAlt: string,
+        image: Image[],
         description: string[],
         technologies: string[],
         myWork: string[],
-        links?: link[]
+        links?: Link[]
     }
 
-    interface link {
+    interface Link {
         url: string,
         name: string
     }
 
-    useEffect(() => {
-        getProjects();
-        //eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
-
-    const [projectsArray, setProjectsArray] = useState<Project[]>([]);
-
-    function getProjects() {
-        var projectsArray: Project[] = Object.values(projects);
-        projectsArray.sort((a, b) => (a.id > b.id) ? 1 : -1)
-        setProjectsArray(projectsArray);
+    interface Image{
+        path: string,
+        alt: string
     }
+
+export default function Projects() {
+
+    var projectsArray : Project[] = [];
+
+    async function getProjects() {
+        projectsArray = Object.values(projects);
+        projectsArray.sort((a, b) => (a.id > b.id) ? 1 : -1)
+        return projectsArray;
+    }
+
+    getProjects()
 
     return (
         <div>
@@ -42,6 +42,7 @@ export default function Projects() {
             <div className="w-4/6 flex justify-self-center mx-auto max-sm:w-11/12">
                 <div className="flex flex-col">
                     <h1 className="font-bold"> Meine Projekte </h1>
+                    {projectsArray.length > 0 && (
                     <div>
                         {projectsArray.map((project) => (
                             <div key={project.id} className="flex flex-col border-t-2 m-2 max-sm:m-0">
@@ -52,7 +53,7 @@ export default function Projects() {
                                     </div>
                                     <div className="flex max-sm:flex-col">
                                         <div className="mt-2 mr-2 w-3/6 max-sm:w-full">
-                                            <img src={`/${project.image}`} alt={project.imageAlt} className="object-contain" />
+                                            <ImageCarousel images={project.image}/>
                                         </div>
                                         <div className="mt-1 flex w-2/6 content-center max-sm:w-full">
                                             {project.description}
@@ -71,8 +72,9 @@ export default function Projects() {
                                             <b> Genutzte Technologien: </b>
                                             <div className="flex flex-row max-sm:flex-col" >
                                                 {project.technologies.map((technology, index) => (
-                                                    <div key={index} className="mr-2 text">
+                                                    <div key={index} className="mr-1 text flex">
                                                         {technology}
+                                                    <div key={index} className={`ml-1 ${index !== project.technologies.length - 1 ? 'border-r-2' : ''} max-sm:border-r-0`}/>
                                                     </div>
                                                 ))}
                                             </div>
@@ -83,10 +85,11 @@ export default function Projects() {
                                                     <b> Links: </b>
                                                     <div className="flex flex-row max-sm:flex-col">
                                                         {project.links.map((link, index) => (
-                                                            <div key={index} className="mr-2">
+                                                            <div key={index} className="mr-1 flex">
                                                                 <a href={link.url} target="_blank">
                                                                     {link.name}
                                                                 </a>
+                                                                <div key={index} className={`ml-1 ${index !== project.links!.length - 1 ? 'border-r-2' : ''} max-sm:border-r-0`}/>
                                                             </div>
                                                         ))}
                                                     </div>
@@ -98,6 +101,7 @@ export default function Projects() {
                             </div>
                         ))}
                     </div>
+                    )}
                 </div>
             </div>
             <Footer />
