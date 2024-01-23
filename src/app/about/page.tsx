@@ -4,7 +4,7 @@ import Footer from "@/components/footer";
 export default function About() {
     return (
         <div>
-            <Header/>
+            <Header highlight={"about"}/>
             <div className="w-4/6 flex flex-col justify-self-center mx-auto max-sm:w-11/12">
                 <div>
                     Ich bin Jonas, gebürtiger Münsteraner. Die letzten Jahre habe ich an der Universität Münster Wirtschaftsinformatik studiert und bin nun auf der Suche nach einer neuen Herausforderung.

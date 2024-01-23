@@ -4,7 +4,7 @@ import Header from "@/components/header";
 export default function Home() {
   return (
     <div>
-      <Header/>
+      <Header highlight={"home"}/>
       <div className="w-4/6 flex flex-col justify-self-center mx-auto max-sm:w-11/12">
         <h1>Hallo mein Name ist Jonas</h1>
         <div>
