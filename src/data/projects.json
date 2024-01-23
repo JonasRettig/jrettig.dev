@@ -123,15 +123,15 @@
         "timeframe": "September 2023",
         "image": [
             {
-                "path":"HuW_Map.png",
+                "path":"HuW_Map.PNG",
                 "alt": "Die Kartenansicht der Hin und Weg App."
             },
             {
-                "path":"HuW_Detail_Dark.png",
+                "path":"HuW_Detail_Dark.PNG",
                 "alt": "Die Detailansicht der Hin und Weg App im dark mode."
             },
             {
-                "path":"HuW_Detail_Light.png",
+                "path":"HuW_Detail_Light.PNG",
                 "alt": "Die Detailansicht der Hin und Weg App im light mode."
             }
         ],
