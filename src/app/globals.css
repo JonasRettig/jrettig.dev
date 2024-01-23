@@ -17,7 +17,7 @@
 }*/
 
 body {
-  color: rgb(212, 197, 201);
+  color: #C8C8C8;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -33,5 +33,5 @@ body {
 }
 
 a:not(#header, #footer, #home) {
-  color: #91cbea;
+  color: #4FC1FF;
 }
