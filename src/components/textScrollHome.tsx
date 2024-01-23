@@ -23,17 +23,17 @@ export default function TextScrollHome() {
 
     async function orchestrateTypewriter() {
         if(document.getElementById("textScroll")!.innerHTML === "") {
-        await(typeWriter("Hallo, mein Name ist Jonas", "textScroll", 100))
+        await(typeWriter("Moin, ich bin Jonas", "textScroll", 100))
         .then(() => {
-            return typeWriter("Ich ❤️ Programmieren und neue Dinge lernen", "textScroll2", 75)
+            return typeWriter("Entwickler mit ❤️ aus Münster", "textScroll2", 75)
         })
         }
     }
 
     return (
         <div className="flex flex-col mx-auto">
-            <h1 id="textScroll" className="text-6xl max-sm:text-4xl min-h-20 max-h-20"/>
-            <div id="textScroll2" className="text-4xl max-sm:text-xl min-h-20 max-h-20"/>
+            <h1 id="textScroll" className="text-6xl max-sm:text-5xl min-h-20 max-h-20"/>
+            <div id="textScroll2" className="text-4xl max-sm:text-2xl min-h-20 max-h-20 max-sm:mt-3"/>
         </div>    
     )
 }

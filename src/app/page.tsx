@@ -8,12 +8,12 @@ import { IoMdPerson, IoIosMail  } from "react-icons/io";
 export default function Home() {
 
   return (
-    <div className="h-screen">
+    <div className="h-screen max-sm:h-full">
       <Header highlight={"home"}/>
-      <div className="flex items-center justify-center h-[88%] max-sm:items-start max-sm:mt-4">
+      <div className="flex items-center justify-center h-[88%]">
         <div className="w-4/6 flex flex-col justify-self-center mx-auto max-sm:w-11/12">
           <TextScrollHome/>
-          <div className="mt-10 flex flex-row mx-auto justify-evenly w-full max-sm:grid max-sm:grid-cols-2 max-sm:w-11/12 max-sm:justify-items-center max-sm:gap-4">
+          <div className="mt-10 flex flex-row mx-auto justify-evenly w-full max-sm:grid max-sm:grid-cols-2 max-sm:w-11/12 max-sm:justify-items-center max-sm:gap-4 max-sm:mt-2">
             <a id="home" href="/projects" className="text-8xl flex flex-col text-center hover:text-orangeHighlight w-1/6 justify-center items-center" >
               <MdArtTrack/>
               <h2 className="text-2xl">Portfolio</h2>
