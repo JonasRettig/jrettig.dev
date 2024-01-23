@@ -16,7 +16,7 @@ export default function Home() {
           <div className="mt-10 flex flex-row mx-auto justify-evenly w-full max-sm:grid max-sm:grid-cols-2 max-sm:w-11/12 max-sm:justify-items-center max-sm:gap-4">
             <a id="home" href="/projects" className="text-8xl flex flex-col text-center hover:text-orangeHighlight w-1/6 justify-center items-center" >
               <MdArtTrack/>
-              <h2 id="firstText" className="text-2xl">Portfolio</h2>
+              <h2 className="text-2xl">Portfolio</h2>
             </a>
             <a id="home" href="https://github.com/JonasRettig" target="_blank" className="text-8xl flex flex-col text-center hover:text-orangeHighlight w-1/6 justify-center items-center" >
               <FaGithub/>

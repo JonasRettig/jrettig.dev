@@ -25,7 +25,7 @@ export default function TextScrollHome() {
         if(document.getElementById("textScroll")!.innerHTML === "") {
         await(typeWriter("Hallo, mein Name ist Jonas", "textScroll", 100))
         .then(() => {
-            return typeWriter("Ich ❤️ Programmieren und neue Dinge zu lernen.", "textScroll2", 75)
+            return typeWriter("Ich ❤️ Programmieren und neue Dinge lernen", "textScroll2", 75)
         })
         }
     }
