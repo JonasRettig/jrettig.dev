@@ -4,7 +4,7 @@ import Header from "@/components/header";
 export default function Skills() {
     return (
         <div>
-            <Header/>
+            <Header highlight={"skills"}/>
             <div className="w-4/6 flex flex-col justify-self-center mx-auto max-sm:w-11/12">
                 <div className="mb-2">
                     <b> Webentwicklung </b>
