@@ -32,6 +32,6 @@ body {
   }
 }
 
-a:not(#header, #footer) {
+a:not(#header, #footer, #home) {
   color: #91cbea;
 }

@@ -15,7 +15,7 @@ const config: Config = {
       },
       colors: {
         "orangeHighlight" : "#c3602c",
-      }
+      },
     },
   },
   plugins: [],
