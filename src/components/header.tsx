@@ -3,16 +3,17 @@ export default function Header({highlight}: {highlight: string}) {
     return (
         <div className="w-screen flex h-[6%]">
             <div className="w-4/6 m-3 flex justify-between mx-auto max-sm:w-11/12">
-                <a 
-                    href="/" 
-                    id="header" 
-                    className={"hover:text-orangeHighlight text-2xl max-sm:text-base"}
-                    style={{
-                        color: highlight === 'home' ? '#c3602c' : 'default',
-                        borderBottom: highlight === 'home' ? '2px solid #c3602c' : 'none'
-                    }}>
-                    Home
-                </a>
+                <div className={"hover:text-orangeHighlight text-2xl max-sm:text-base"}>
+                    <a
+                        href="/" 
+                        id="header" 
+                        style={{
+                            color: highlight === 'home' ? '#c3602c' : 'default',
+                            borderBottom: highlight === 'home' ? '2px solid #c3602c' : 'none'
+                        }}>
+                        Home
+                    </a>
+                </div>
                 <div className="w-2/6 flex justify-around max-sm:w-4/6">
                     <a 
                         href="/projects" 
