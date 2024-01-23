@@ -1,12 +1,7 @@
-'use client'
 import Header from "@/components/header";
 import projects from "@/data/projects.json";
-import { useEffect, useState } from "react";
 import Footer from "@/components/footer";
 import ImageCarousel from "@/components/imageCarousel";
-import Image from "next/image";
-
-export default function Projects() {
 
     interface Project {
         id: number,
@@ -29,18 +24,17 @@ export default function Projects() {
         alt: string
     }
 
-    useEffect(() => {
-        getProjects();
-        //eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+export default function Projects() {
 
-    const [projectsArray, setProjectsArray] = useState<Project[]>([]);
+    var projectsArray : Project[] = [];
 
-    function getProjects() {
-        var projectsArray: Project[] = Object.values(projects);
+    async function getProjects() {
+        projectsArray = Object.values(projects);
         projectsArray.sort((a, b) => (a.id > b.id) ? 1 : -1)
-        setProjectsArray(projectsArray);
+        return projectsArray;
     }
+
+    getProjects()
 
     return (
         <div>
@@ -48,6 +42,7 @@ export default function Projects() {
             <div className="w-4/6 flex justify-self-center mx-auto max-sm:w-11/12">
                 <div className="flex flex-col">
                     <h1 className="font-bold"> Meine Projekte </h1>
+                    {projectsArray.length > 0 && (
                     <div>
                         {projectsArray.map((project) => (
                             <div key={project.id} className="flex flex-col border-t-2 m-2 max-sm:m-0">
@@ -106,6 +101,7 @@ export default function Projects() {
                             </div>
                         ))}
                     </div>
+                    )}
                 </div>
             </div>
             <Footer />
