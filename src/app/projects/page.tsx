@@ -45,7 +45,7 @@ export default function Projects() {
                     {projectsArray.length > 0 && (
                     <div>
                         {projectsArray.map((project) => (
-                            <div key={project.id} className="flex flex-col border-t-2 m-2 max-sm:m-0">
+                            <div key={project.id} className="flex flex-col border-t-2 m-2 max-sm:m-0 max-sm:w-[97%]">
                                 <div className="flex-col mt-1">
                                     <div className="flex flex-row">
                                         <h2 className="font-bold mr-2"> {project.name} </h2>

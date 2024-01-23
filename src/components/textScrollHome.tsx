@@ -32,8 +32,8 @@ export default function TextScrollHome() {
 
     return (
         <div className="flex flex-col mx-auto">
-            <h1 id="textScroll" className="text-6xl max-sm:text-4xl min-h-20 max-h-20"/>
-            <div id="textScroll2" className="text-4xl max-sm:text-xl min-h-20 max-h-20"/>
+            <h1 id="textScroll" className="text-6xl max-sm:text-5xl min-h-20 max-h-20"/>
+            <div id="textScroll2" className="text-4xl max-sm:text-2xl min-h-20 max-h-20 max-sm:mt-3"/>
         </div>    
     )
 }
