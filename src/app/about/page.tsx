@@ -4,9 +4,9 @@ import Job from "@/components/job";
 
 export default function About() {
     return (
-        <div>
+        <div className="h-screen">
             <Header highlight={"about"}/>
-            <div className="w-4/6 flex flex-col justify-self-center mx-auto max-sm:w-11/12 h-[88%]">
+            <div className="w-4/6 flex flex-col justify-self-center mx-auto max-sm:w-11/12 min-h-[88%]">
                 <div className="flex flex-row">
                     <div className="flex flex-col w-4/6">
                         <b className="text-lg"> Quick facts about me </b>
