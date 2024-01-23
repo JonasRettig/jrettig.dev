@@ -22,8 +22,8 @@
             }
         ],
         "description": ["Der Sozialkompass ist eine Webseite, welche Menschen in sozialen Notlagen hilft, sich über ihnen zustehende Sozialleistungen zu informieren. ",
-                        "Das Projekt startete im Jahr 2022 im Rahmen eines Projektseminars an der Universität Münster und wird seit April 2023 ehrenamtlich weitergeführt.",
-                        "Wir haben beim MÜNSTERHACK 2022 den zweiten Platz und Mentorenpreis gewonnen. Des Weiteren wurden wir in das Solution-Enabler-Programm des Hackathons aufgenommen und haben beim MÜNSTERHACK 2023 den Nachgehackt-Preis für das am besten weitergeführte Projekt gewonnen."
+                        "Das Projekt startete im Jahr 2022 im Rahmen eines Projektseminars an der Universität Münster und wird seit April 2023 ehrenamtlich weitergeführt. ",
+                        "Wir haben beim MÜNSTERHACK 2022 den zweiten Platz und Mentorenpreis gewonnen. Des Weiteren wurden wir in das Solution-Enabler-Programm des Hackathons aufgenommen und haben beim MÜNSTERHACK 2023 den Nachgehackt-Preis für das am besten weitergeführte Projekt gewonnen. "
                         ],
         "myWork": ["In der ersten Iteration des Sozialkompass habe ich am Algorithmus mitgearbeitet und das Adminpanel zur Bearbeitung unserer Datenbank alleine erworfen und programmiert. Bei dem Redevelopment des Sozialkompass habe ich die Fragenseite nach einem Design nachgebaut und das Postleitzahlsystem eingefügt."],
         "technologies": ["React.js", "Next.js", "Tailwind CSS", "TypeScript", "MongoDB", "Git", "Jira", "Figma", "Python"],
@@ -47,8 +47,8 @@
             "alt": "Die Anzeige in der Haupthalle des Oberverwaltungsgerichts."
             }],
         "description": ["Für meinen Arbeitgeber, das Oberverwaltungsgericht für das Land Nordrhein-Westfalen in Münster, habe ich eine Informationsanzeige, welche im Eingangsbereich und in der Kantine des Gerichts aufgestellt ist, entwickelt. ",
-                        "Die Anzeige zeigt aktuelle Nachrichten, die Wettervorhersage und die aktuellen Termine des Gerichts an.",
-                        "Ich habe das Projekt vollständig alleine designed und entwickelt. Die Anzeige wird auf einem Raspberry Pi gehostet und angezeigt. Zudem habe ich die Dokumentation uns Skripte für die Installation geschrieben."
+                        "Die Anzeige zeigt aktuelle Nachrichten, die Wettervorhersage und die aktuellen Termine des Gerichts an. ",
+                        "Ich habe das Projekt vollständig alleine designed und entwickelt. Die Anzeige wird auf einem Raspberry Pi gehostet und angezeigt. Zudem habe ich die Dokumentation uns Skripte für die Installation geschrieben. "
                         ],
         "technologies": ["React.js", "Vite.js", "Material UI", "Git", "Javascript"],
         "links": [
@@ -68,7 +68,7 @@
             }],
         "description": ["Ein Vertiefungsmodul an der Universität Münster, welches sich mit dem Thema Design Thinking beschäftigt. ",
                         "Das Seminar fand in Kooperation mit der University of West Georgia und der Georgia College & State University als Erasmus+ Projekt statt. ",
-                        "Im Rahmen des Moduls haben wir vor Ort (Atlanta, USA) mit den Praxispartnern Southwire und Celonis eine reales Problem bearbeitet."
+                        "Im Rahmen des Moduls haben wir vor Ort (Atlanta, USA) mit den Praxispartnern Southwire und Celonis eine reales Problem bearbeitet. "
                     ],
         "technologies": ["Design Thinking", "Englisch", "Kollaboration in internationalen Teams", "Stakeholderkommuikation", "Power Point"],
         "links": [
@@ -104,7 +104,7 @@
                 "alt": "Die About Seite meiner Webseite."
             }
         ],
-        "description": ["Ich habe diese Webseite mit dem Ziel erstellt, meine Projekte und mich selbst vorzustellen. ", "Natürlich habe ich die Webseite komplett eigenständig designed und entwickelt."],
+        "description": ["Ich habe diese Webseite mit dem Ziel erstellt, meine Projekte und mich selbst vorzustellen. ", "Natürlich habe ich die Webseite komplett eigenständig designed und entwickelt. "],
         "technologies": ["React.js", "Tailwind CSS", "Git", "TypeScript", "Next.js"],
         "links": [
             {

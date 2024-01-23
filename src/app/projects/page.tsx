@@ -37,9 +37,9 @@ export default function Projects() {
     getProjects()
 
     return (
-        <div>
+        <div className="min-h-screen">
             <Header highlight={"projects"}/>
-            <div className="w-4/6 flex justify-self-center mx-auto max-sm:w-11/12">
+            <div className="w-4/6 flex justify-self-center mx-auto max-sm:w-11/12 min-h-[88%]">
                 <div className="flex flex-col">
                     <h1 className="font-bold"> Meine Projekte </h1>
                     {projectsArray.length > 0 && (

@@ -10,9 +10,9 @@ import { RiTeamFill } from "react-icons/ri";
 
 export default function Skills() {
     return (
-        <div>
+        <div className="h-screen">
             <Header highlight={"skills"}/>
-            <div className="w-4/6 flex flex-col justify-self-center mx-auto max-sm:w-11/12">
+            <div className="w-4/6 flex flex-col justify-self-center mx-auto max-sm:w-11/12 min-h-[88%]">
                 <Skill 
                     icon={<IoLogoJavascript />} 
                     skill={"Java-/TypeScript"} 
