@@ -10,7 +10,7 @@ import ImageCarousel from "@/components/imageCarousel";
         image: Image[],
         description: string[],
         technologies: string[],
-        myWork: string[],
+        myWork?: string[],
         links?: Link[]
     }
 
@@ -59,6 +59,7 @@ export default function Projects() {
                                             {project.description}
                                         </div>
                                     </div>
+                                    {project.myWork && (
                                     <div className="mt-2">
                                         <b> Meine Arbeit: </b>
                                         {project.myWork.map((myWork, index) => (
@@ -67,6 +68,7 @@ export default function Projects() {
                                             </div>
                                         ))}
                                     </div>
+                                    )}
                                     <div className="flex flex-row max-sm:mb-3">
                                         <div className="mt-2 mr-2">
                                             <b> Genutzte Technologien: </b>

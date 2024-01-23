@@ -27,13 +27,15 @@ export default function ImageCarousel({images}: {images: Image[]}) {
     }
 
     return (
-        <div>
-            <img src={`/${images[currentImage].path}`} alt={images[currentImage].alt} title={images[currentImage].alt} className="object-contain" />
+        <div className="flex mx-auto flex-col">
+            <img src={`/${images[currentImage].path}`} alt={images[currentImage].alt} title={images[currentImage].alt} className="object-contain max-h-96" />
+            {images.length > 1 && (
             <div className="flex justify-between">
                 <button className="hover:text-orangeHighlight max-sm:text-orangeHighlight" onClick={() => previousImage()}> Vorheriges Bild </button>
                 <label className="text-center"> {currentImage+1}/{images.length} </label>
                 <button className="hover:text-orangeHighlight max-sm:text-orangeHighlight" onClick={() => nextImage()}> Nächstes Bild </button>
             </div>
+            )}
         </div>
     )
 }
