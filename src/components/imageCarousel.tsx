@@ -30,7 +30,7 @@ export default function ImageCarousel({ images }: { images: Image[] }) {
     function renderBig() {
         return (
             <div className="z-2 flex fixed top-0 right-0 z-0 bottom-0 left-0 bg-black bg-opacity-75 justify-center items-center" style={{ display: imgPopup ? 'flex' : 'none' }} onClick={() => setImgPopup(false)}>
-                <div className="flex flex-col z-10 bg-darkBG h-fit w-fit drop-shadow-xl max-sm:w-4/5 max-sm:pt-5 max-sm:min-h-fit" onClick={(e) => e.stopPropagation()}>
+                <div className="flex flex-col z-10 bg-darkBG h-fit w-fit drop-shadow-xl " onClick={(e) => e.stopPropagation()}>
                     <div className="h-[97%] w-[97%] mx-auto">
                         <div className="h-[1%] text-xs"> &nbsp;</div>
                         <img
