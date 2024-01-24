@@ -9,7 +9,7 @@ export default function Header({highlight}: {highlight: string}) {
                         id="header" 
                         style={{
                             color: highlight === 'home' ? '#c3602c' : 'default',
-                            borderBottom: highlight === 'home' ? '2px solid #c3602c' : 'none'
+                            textDecoration: highlight === 'home' ? 'underline' : 'none'
                         }}>
                         Home
                     </a>
@@ -21,7 +21,7 @@ export default function Header({highlight}: {highlight: string}) {
                         className={"hover:text-orangeHighlight text-2xl max-sm:text-base"}
                         style={{
                             color: highlight === 'projects' ? '#c3602c' : 'default',
-                            borderBottom: highlight === 'projects' ? '2px solid #c3602c' : 'none'
+                            textDecoration: highlight === 'projects' ? 'underline' : 'none'
                         }}>
                         Projekte
                     </a>
@@ -31,7 +31,7 @@ export default function Header({highlight}: {highlight: string}) {
                         className={"hover:text-orangeHighlight text-2xl max-sm:text-base"}
                         style={{
                             color: highlight === 'skills' ? '#c3602c' : 'default',
-                            borderBottom: highlight === 'skills' ? '2px solid #c3602c' : 'none'
+                            textDecoration: highlight === 'skills' ? 'underline' : 'none'
                     }}>
                         Skills
                     </a>
@@ -41,7 +41,7 @@ export default function Header({highlight}: {highlight: string}) {
                         className={"hover:text-orangeHighlight text-2xl max-sm:text-base"}
                         style={{
                             color: highlight === 'about' ? '#c3602c' : 'default',
-                            borderBottom: highlight === 'about' ? '2px solid #c3602c' : 'none'
+                            textDecoration: highlight === 'about' ? 'underline' : 'none'
                     }}>
                         About
                     </a>
