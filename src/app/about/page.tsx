@@ -11,15 +11,14 @@ export default function About() {
                     <div className="flex flex-col w-4/6">
                         <b className="text-lg"> Quick facts about me </b>
                         <div> - 23 Jahre alt </div>
-                        <div> - Münsteraner </div>
-                        <div> - Mein Lieblingssong (momentan): <a href="https://open.spotify.com/track/4Jh5SlPiCAKP2d88TmKisF?si=f0cbeb1f45914f73"  target="_blank"> Herald of Darkness </a></div>
-                        <div> - Mein Lieblingsspiel: <a href="https://store.steampowered.com/app/501300/What_Remains_of_Edith_Finch/" target="_blank"> What Remains of Edith Finch </a></div>
-                        <div> - Mein Lieblingsfilm: <a href="https://letterboxd.com/film/paddington-2/" target="_blank"> Paddington 2 </a></div>
-                        <div> - Mein Lieblingsreise: entweder die Schweiz oder New York</div>
+                        <div> - Münsteraner durch und durch </div>
+                        <div> - Lieblingssong (momentan): <a href="https://open.spotify.com/track/4Jh5SlPiCAKP2d88TmKisF?si=f0cbeb1f45914f73"  target="_blank"> Herald of Darkness </a></div>
+                        <div> - Lieblingsspiel: <a href="https://store.steampowered.com/app/501300/What_Remains_of_Edith_Finch/" target="_blank"> What Remains of Edith Finch </a></div>
+                        <div> - Lieblingsfilm: <a href="https://letterboxd.com/film/paddington-2/" target="_blank"> Paddington 2 </a></div>
+                        <div> - Lieblingsreise: entweder die Schweiz oder New York</div>
                     </div>
-                    <div className="relative w-2/6 ml-4">
-                        <img src="/me_good.jpeg" alt="Ein Bild von Jonas Rettig im Hemd." className="absolute hover:opacity-0 z-10"/>
-                        <img src="/me_bad.jpeg" alt="Ein Bild von Jonas Rettig, wie er unter einem Tisch liegt. Ein Laptop steht vor ihm." className="absolute"/>
+                    <div className="relative w-2/6 ml-10">
+                        <img src="/me_good.jpeg" alt="Ein Bild von Jonas Rettig. Er trägt ein Hemd und lächelt in die Kamera." className="absolute"/>
                     </div>
                 </div>
                 <div className="w-4/6 mt-2 border-t-2">
