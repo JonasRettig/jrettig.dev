@@ -15,20 +15,20 @@ export default function Skills() {
             <div className="w-4/6 flex flex-col justify-self-center mx-auto max-sm:w-11/12 min-h-[88%]">
                 <Skill 
                     icon={<IoLogoJavascript />} 
-                    skill={"Java-/TypeScript"} 
-                    info={"In den letzten Jahren habe ich mich hauptsächlich mit Webentwicklung beschäftigt. Neben viel Arbeit in der Anwendungsentwicklung habe ich auch Erfahrung im Umsetzen von Designs in die Realität. Gearbeitet habe ich mit React.js, Next.js, Tailwind CSS und Material UI."}
+                    skill={"Webentwicklung"} 
+                    info={"In den letzten Jahren habe ich mich hauptsächlich mit Webentwicklung beschäftigt. Neben viel Arbeit in der Anwendungsentwicklung habe ich auch Erfahrung im Umsetzen von Designs in die Realität. Gearbeitet habe ich mit Java-/Typescript, React.js, Next.js, Tailwind CSS und Material UI."}
                     level={9}
                 />
                 <Skill 
                     icon={<FaFileCode />} 
                     skill={"Sonstige Entwicklung"} 
-                    info={"Auch in anderen Programmiersprachen habe ich bereits Erfahrungen sammeln können. Meine Erfahrungen liegen hier haupsächlich in Python und Java, aber auch mit R, C# und SQL habe ich schon gearbeitet."}
+                    info={"Auch in anderen Programmiersprachen habe ich bereits Erfahrungen sammeln können. Diese liegen haupsächlich in Python und Java, aber auch mit R, C# und SQL habe ich schon viel gearbeitet."}
                     level={7}
                 />
                 <Skill 
                     icon={<FaFlagUsa />} 
                     skill={"Englisch"} 
-                    info={"Ich habe schon immer ein Interesse an Englisch gehabt und deswegen die Sprache auch als Leistungskurs im Abitur gehabt. Ich durfte Englisch bei einem Auslandsaufenthalt in den USA anwenden und konsumiere auch die meisten Medien auf Englisch."}
+                    info={"Ich habe schon immer ein Interesse an Englisch gehabt und deswegen die Sprache auch als Leistungskurs im Abitur gehabt. Ich durfte Englisch bei einem Auslandsaufenthalt in den USA anwenden und konsumiere auch die meisten Medien in meiner Freizeit auf Englisch."}
                     level={10}
                 />
                 <Skill 
