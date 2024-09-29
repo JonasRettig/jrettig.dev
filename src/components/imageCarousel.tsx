@@ -6,7 +6,7 @@ interface Image {
     alt: string
 }
 
-export default function ImageCarousel({ images }: { images: Image[] }) {
+export default function ImageCarousel({ images, showAltAsInfo}: { images: Image[], showAltAsInfo: boolean }) {
 
     const [currentImage, setCurrentImage] = useState<number>(0);
     const [imgPopup, setImgPopup] = useState<boolean>(false);
@@ -45,8 +45,8 @@ export default function ImageCarousel({ images }: { images: Image[] }) {
                                 <label className="text-center"> {currentImage + 1}/{images.length} </label>
                                 <button className="hover:text-orangeHighlight max-sm:text-orangeHighlight" onClick={() => nextImage()}> Nächstes Bild </button>
                             </div>
-                        ): 
-                        <div className="h-[1%] text-xs"> &nbsp;</div>
+                        ) :
+                            <div className="h-[1%] text-xs"> &nbsp;</div>
                         }
                     </div>
                 </div>
@@ -71,6 +71,9 @@ export default function ImageCarousel({ images }: { images: Image[] }) {
                     <button className="hover:text-orangeHighlight max-sm:text-orangeHighlight" onClick={() => nextImage()}> Nächstes Bild </button>
                 </div>
             )}
+            {showAltAsInfo &&
+                <label className="text-left mt-5">  {images[currentImage].alt} </label>
+            }
         </div>
     )
 }

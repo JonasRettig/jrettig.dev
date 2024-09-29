@@ -14,7 +14,7 @@ export default function Header({highlight}: {highlight: string}) {
                         Home
                     </a>
                 </div>
-                <div className="w-2/6 flex justify-around max-sm:w-4/6">
+                <div className="w-3/6 flex justify-evenly max-sm:w-5/6">
                     <a 
                         href="/projects" 
                         id="header" 
@@ -34,6 +34,16 @@ export default function Header({highlight}: {highlight: string}) {
                             textDecoration: highlight === 'skills' ? 'underline' : 'none'
                     }}>
                         Skills
+                    </a>
+                    <a 
+                        href="/photography" 
+                        id="header" 
+                        className={"hover:text-orangeHighlight text-2xl max-sm:text-base"}
+                        style={{
+                            color: highlight === 'photography' ? '#c3602c' : 'default',
+                            textDecoration: highlight === 'photography' ? 'underline' : 'none'
+                    }}>
+                        Fotos
                     </a>
                     <a 
                         href="/about" 

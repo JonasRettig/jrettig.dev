@@ -9,14 +9,10 @@ export default function About() {
             <div className="w-4/6 flex flex-col justify-self-center mx-auto max-sm:w-11/12 min-h-[88%]">
                 <div className="flex flex-row">
                     <div className="flex flex-col w-4/6">
-                        <b className="text-lg"> Ein (paar) Fakten über mich </b>
-                        <div> - 23 Jahre alt </div>
-                        <div> - Münsteraner durch und durch </div>
-                        <div> - Lieblingssong (momentan): <a href="https://open.spotify.com/track/2JIVeQQvIdyQvrz9Mhi6qL?autoplay=true"  target="_blank"> Does Your Mother Know von ABBA </a></div>
-                        <div> - Lieblingsspiel: <a href="https://store.steampowered.com/app/501300/What_Remains_of_Edith_Finch/" target="_blank"> What Remains of Edith Finch </a></div>
-                        <div> - Lieblingsfilm: <a href="https://letterboxd.com/film/paddington-2/" target="_blank"> Paddington 2 </a></div>
-                        <div> - Lieblingsreise: entweder die Schweiz oder New York</div>
-                        <div> - sonstige Hobbies: Photographieren, Backen, Brettspiele </div>
+                        <b className="text-lg"> Ein (paar) Infos über mich </b>
+                        <div> Moin, ich bin Jonas :) </div>
+                        <div> Ich lebe seit 24 Jahren in Münster und liebe diese Stadt genau so lange. </div>
+                        <div> In meiner Freizeit spiele ich gerne Spiel (ob Brett- oder Video- ist mir hier gleich), schau Filme oder verbinge einfach einen entspannten Abend mit meinen Freunden. </div>
                     </div>
                     <div className="relative w-2/6 ml-10">
                         <img src="/me_good.jpeg" alt="Ein Bild von Jonas Rettig. Er trägt ein Hemd und lächelt in die Kamera." className="absolute"/>
@@ -26,7 +22,7 @@ export default function About() {
                         <b className="text-lg"> Bildungsweg </b>
                         <div>
                             <div> - Bachelor in Wirtschaftsinformatik an der Universität Münster </div>
-                            <div className="ml-6"> 2019 bis April 2024, noch kein Abschluss </div>
+                            <div className="ml-6"> 2019 bis Mai 2024, Abschlussnote 2,5 </div>
                         </div>
                         <div>
                             <div> - Abitur am Gymnasium Paulinum </div>
@@ -36,10 +32,16 @@ export default function About() {
                 <div className="w-4/6 mt-2 border-t-2">
                     <b className="text-lg"> Berufserfahrung </b>
                     <Job 
+                        name={"Softwareentwickler"}
+                        company={"GuideCom AG"}
+                        what = {["Full-Stack-Development in Java", "Arbeit an der GuideCom HR-Suite", "Enge Zusammenarbeit mit dem Customer Service sowie den Kunden der GuideCom"]}
+                        timeframe={"Juni 2024 - heute"}
+                    /> 
+                    <Job 
                         name={"Werkstudent im IT-Support"}
                         company={"Oberverwaltungsgericht für das Land Nordrhein-Westfalen"}
                         what = {["IT-Support, Einrichten von IT-Arbeitsplätzen", "Leitung von Schulungen und Erstellen von Dokumentationen", "Entwicklung einer Informationsanzeige für öffentliche Räume des Gerichts", "Unterstützung des lokalen IT-Teams"]}
-                        timeframe={"Mai 2022 - heute"}
+                        timeframe={"Mai 2022 - April 2024"}
                     /> 
                     <Job 
                         name={"Studentische Hilfskraft im IT-Support"}

@@ -53,7 +53,7 @@ export default function Projects() {
                                     </div>
                                     <div className="flex max-sm:flex-col">
                                         <div className="mt-2 mr-2 w-3/6 max-sm:w-full">
-                                            <ImageCarousel images={project.image}/>
+                                            <ImageCarousel images={project.image} showAltAsInfo={false}/>
                                         </div>
                                         <div className="mt-1 flex w-2/6 content-center max-sm:w-full">
                                             {project.description}

@@ -5,20 +5,24 @@
         "timeframe": "September 2022 - heute",
         "image": [
             {
-                "path":"Sozialkompass_home_old.png",
-                "alt": "Die (alte) Startseite des Sozialkompass."
+                "path":"Sozialkompass/Sozialkompass_home_new.png",
+                "alt": "Die Startseite des Sozialkompass."
             },
             {
-                "path":"Sozialkompass_question.png",
+                "path":"Sozialkompass/Sozialkompass_question.png",
                 "alt": "Die neue Fragenseite des Sozialkompass."
             },
             {
-                "path":"Adminpanel_overview.png",
+                "path":"Sozialkompass/Adminpanel_overview.png",
                 "alt": "Das Adminpanel des Sozialkompass. Hier werden zum Beispiel die Anträge verwaltet."
             },
             {
-                "path":"Adminpanel_edit.png",
+                "path":"Sozialkompass/Adminpanel_edit.png",
                 "alt": "Die Übersicht über einen Antrag im Adminpanel."
+            },
+            {
+                "path":"Sozialkompass/Sozialkompass_home_old.png",
+                "alt": "Die alte Startseite des Sozialkompass."
             }
         ],
         "description": ["Der Sozialkompass ist eine Webseite, welche Menschen in sozialen Notlagen hilft, sich über ihnen zustehende Sozialleistungen zu informieren. ",
@@ -46,7 +50,7 @@
             "path":"OVGDisplay.JPEG",
             "alt": "Die Anzeige in der in meinem Büro im Oberverwaltungsgericht."
             }],
-        "description": ["Für meinen Arbeitgeber, das Oberverwaltungsgericht für das Land Nordrhein-Westfalen in Münster, habe ich eine Informationsanzeige, welche im Eingangsbereich und in der Kantine des Gerichts aufgestellt werden soll, entwickelt. ",
+        "description": ["Für meinen früheren Arbeitgeber, das Oberverwaltungsgericht für das Land Nordrhein-Westfalen in Münster, habe ich eine Informationsanzeige, welche im Eingangsbereich und in der Kantine des Gerichts aufgestellt werden soll, entwickelt. ",
                         "Die Anzeige zeigt aktuelle Nachrichten, die Wettervorhersage und die aktuellen Termine des Gerichts an. ",
                         "Ich habe das Projekt vollständig alleine designed und entwickelt. Die Anzeige wird auf einem Raspberry Pi gehostet und angezeigt. Zudem habe ich die Dokumentation und Skripte für die Installation geschrieben. "
                         ],
@@ -88,19 +92,19 @@
         "timeframe": "Januar 2024",
         "image": [
             {
-                "path":"Website.png",
+                "path":"Website/Website.png",
                 "alt": "Die Startseite meiner Webseite."
             },
             {
-                "path":"Website_projects.png",
+                "path":"Website/Website_projects.png",
                 "alt": "Eine Übersicht über die Projekte, an denen ich gearbeitet habe."
             },
             {
-                "path":"Website_skills.png",
+                "path":"Website/Website_skills.png",
                 "alt": "Eine Übersicht meiner Skills."
             },
             {
-                "path":"Website_about.png",
+                "path":"Website/Website_about.png",
                 "alt": "Die About Seite meiner Webseite."
             }
         ],
@@ -119,19 +123,48 @@
     },
     "5":{
         "id": 5,
+        "name": "MünsterTag",
+        "timeframe": "September 2023",
+        "image": [
+            {
+                "path":"MSTag/MSTag_Trophy.gif",
+                "alt": "Eine gerade freigeschaltete Trophäe."
+            },
+            {
+                "path":"MSTag/MSTag_Map_in.PNG",
+                "alt": "Die Kartenansicht der MünsterTag App."
+            },
+            {
+                "path":"MSTag/MSTag_Catalogue.PNG",
+                "alt": "Die Übersicht alle sammelbaren und schon gefundenen Tags."
+            },
+            {
+                "path":"MSTag/MSTag_Detail_First.PNG",
+                "alt": "Die Ansicht eines neu gefunden Tags."
+            }
+        ],
+        "description": ["Im Rahmen des MÜNSTERHACK 2024 habe ich mit meinem Team eine App entwickelt, mit der Nutzer die Stadt Münster spielerisch erkunden können. ",
+                        "Umgesetzt haben wir eine Art GeoCaching mit NFC-Tags. Entdeckte Orte werden in einer Sammelansicht angezeigt. ",
+                        "Neben dem einfachen Sammeln von Orten bieten wir auch Trophäen für das Sammeln einer kompletten Kategorie, wie zum Beispiel dem Entdecken eines kompletten Stadtteils oder aller Kirchen in Münster an."
+                    ],
+        "myWork": ["Ich habe alle Detailansichten für die App entwickelt. Hierzu zählt die Ansicht eines einzelnen Tags, sowie die Ansicht einer Trophäe. Zudem habe ich im Pair-Programming auch die Arbeit an den anderen Ansichten der App unterstützt."],
+        "technologies": ["React Native", "NFC", "Scaniverse"]
+    },
+    "6":{
+        "id": 6,
         "name": "Hin und Weg",
         "timeframe": "September 2023",
         "image": [
             {
-                "path":"HuW_Map.PNG",
+                "path":"HuW/HuW_Map.PNG",
                 "alt": "Die Kartenansicht der Hin und Weg App."
             },
             {
-                "path":"HuW_Detail_Dark.PNG",
+                "path":"HuW/HuW_Detail_Dark.PNG",
                 "alt": "Die Detailansicht der Hin und Weg App im dark mode."
             },
             {
-                "path":"HuW_Detail_Light.PNG",
+                "path":"HuW/HuW_Detail_Light.PNG",
                 "alt": "Die Detailansicht der Hin und Weg App im light mode."
             }
         ],
