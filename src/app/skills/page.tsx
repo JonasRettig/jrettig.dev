@@ -2,10 +2,7 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Skill from "@/components/skill";
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaFileCode } from "react-icons/fa";
-import { FaFlagUsa } from "react-icons/fa";
-import { FaLightbulb } from "react-icons/fa";
-import { FaTools } from "react-icons/fa";
+import { FaTools, FaJava, FaLightbulb, FaFlagUsa, FaFileCode } from "react-icons/fa";
 import { RiTeamFill } from "react-icons/ri";
 
 export default function Skills() {
@@ -13,6 +10,12 @@ export default function Skills() {
         <div className="h-screen">
             <Header highlight={"skills"}/>
             <div className="w-4/6 flex flex-col justify-self-center mx-auto max-sm:w-11/12 min-h-[88%]">
+                <Skill 
+                    icon={<FaJava />} 
+                    skill={"Java"} 
+                    info={"Seit Juni 2024 arbeite ich Hauptberuflich mit Java. Neben der Full-Stack Entwicklung mit Java habe ich auch Kontakt mit anderen angrenzenden Technologien wie Wicket, Hibernate und Maven sammeln können."}
+                    level={9}
+                />
                 <Skill 
                     icon={<IoLogoJavascript />} 
                     skill={"Webentwicklung"} 
@@ -22,7 +25,7 @@ export default function Skills() {
                 <Skill 
                     icon={<FaFileCode />} 
                     skill={"Sonstige Entwicklung"} 
-                    info={"Auch in anderen Programmiersprachen habe ich bereits Erfahrungen sammeln können. Diese liegen haupsächlich in Python und Java, aber auch mit R, C# und SQL habe ich schon viel gearbeitet."}
+                    info={"Auch in anderen Programmiersprachen habe ich bereits Erfahrungen sammeln können. Diese liegen haupsächlich in Python, aber auch mit R, C# und SQL habe ich schon viel gearbeitet."}
                     level={7}
                 />
                 <Skill 

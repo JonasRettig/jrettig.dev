@@ -46,7 +46,7 @@
             "path":"OVGDisplay.JPEG",
             "alt": "Die Anzeige in der in meinem Büro im Oberverwaltungsgericht."
             }],
-        "description": ["Für meinen Arbeitgeber, das Oberverwaltungsgericht für das Land Nordrhein-Westfalen in Münster, habe ich eine Informationsanzeige, welche im Eingangsbereich und in der Kantine des Gerichts aufgestellt werden soll, entwickelt. ",
+        "description": ["Für meinen früheren Arbeitgeber, das Oberverwaltungsgericht für das Land Nordrhein-Westfalen in Münster, habe ich eine Informationsanzeige, welche im Eingangsbereich und in der Kantine des Gerichts aufgestellt werden soll, entwickelt. ",
                         "Die Anzeige zeigt aktuelle Nachrichten, die Wettervorhersage und die aktuellen Termine des Gerichts an. ",
                         "Ich habe das Projekt vollständig alleine designed und entwickelt. Die Anzeige wird auf einem Raspberry Pi gehostet und angezeigt. Zudem habe ich die Dokumentation und Skripte für die Installation geschrieben. "
                         ],
@@ -119,6 +119,31 @@
     },
     "5":{
         "id": 5,
+        "name": "MünsterTag",
+        "timeframe": "September 2023",
+        "image": [
+            {
+                "path":"HuW_Map.PNG",
+                "alt": "Die Kartenansicht der Hin und Weg App."
+            },
+            {
+                "path":"HuW_Detail_Dark.PNG",
+                "alt": "Die Detailansicht der Hin und Weg App im dark mode."
+            },
+            {
+                "path":"HuW_Detail_Light.PNG",
+                "alt": "Die Detailansicht der Hin und Weg App im light mode."
+            }
+        ],
+        "description": ["Im Rahmen des MÜNSTERHACK 2024 habe ich mit meinem Team eine App entwickelt, mit der Nutzer die Stadt Münster spielerisch erkunden können. ",
+                        "Umgesetzt haben wir eine Art GeoCaching mit NFC-Tags. Entdeckte Orte werden in einer Sammelansicht angezeigt. ",
+                        "Neben dem einfachen Sammeln von Orten bieten wir auch Trophäen für das Sammeln einer kompletten Kategorie, wie zum Beispiel dem Entdecken eines kompletten Stadtteils oder aller Kirchen in Münster an."
+                    ],
+        "myWork": ["Ich habe alle Detailansichten für die App entwickelt. Hierzu zählt die Ansicht eines einzelnen Tags, sowie die Ansicht einer Trophäe. Zudem habe ich im Pair-Programming auch die Arbeit an den anderen Ansichten der App unterstützt."],
+        "technologies": ["React Native", "NFC", "Scaniverse"]
+    },
+    "6":{
+        "id": 6,
         "name": "Hin und Weg",
         "timeframe": "September 2023",
         "image": [
