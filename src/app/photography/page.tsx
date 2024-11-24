@@ -42,6 +42,46 @@ export default function Fotos() {
         {
             "path": "Fotos/Ockholm_Voegel.JPEG",
             "alt": "Ein paar Vögel über der Nordsee vor Ockholm, aufgenommen mit meiner analogen Kamera."
+        },
+        {
+            "path": "Fotos/London_Statuen.JPEG",
+            "alt": "Zwei Statuen vor dem Buckingham Palace in London, aufgenommen mit dem iPhone."
+        },
+        {
+            "path": "Fotos/London_StadtUndWolken.JPEG",
+            "alt": "Wolken über Canary Wharf, aufgenommen mit dem iPhone."
+        },
+        {
+            "path": "Fotos/London_Fuchs.JPEG",
+            "alt": "Ein Fuchs auf dem Highgate Cemetery in London, aufgenommen mit dem iPhone."
+        },
+        {
+            "path": "Fotos/London_Friedhof.JPEG",
+            "alt": "Der Highgate Cemetery in London, aufgenommen mit dem iPhone."
+        },
+        {
+            "path": "Fotos/London_Reflektion.JPEG",
+            "alt": "Eine Reflektion der Wolken in einem Hochhaus in London, aufgenommen mit dem iPhone."
+        },
+        {
+            "path": "Fotos/London_Eye.JPEG",
+            "alt": "Das London Eye bei Nacht, aufgenommen mit dem iPhone."
+        },
+        {
+            "path": "Fotos/London_Eye_2.JPEG",
+            "alt": "Das London Eye abgeschnitten von einem Gebäude, aufgenommen mit dem iPhone."
+        },
+        {
+            "path": "Fotos/London_Eye_3.JPEG",
+            "alt": "Das London Eye inklusive Vogel, aufgenommen mit dem iPhone."
+        },
+        {
+            "path": "Fotos/London_Flugzeug.JPEG",
+            "alt": "Ein Flugzeug in den Wolken über London, aufgenommen mit dem iPhone."
+        },
+        {
+            "path": "Fotos/London_Statue.JPEG",
+            "alt": "Eine Statue neben dem Royal Observatory in Greenwich überblickt Canary Wharf, aufgenommen mit dem iPhone."
         }
     ]
 
