@@ -20,6 +20,7 @@ export default function ImageGrid({ images }: { images: Image[] }) {
                 return (
                     <div>
                         <img
+                            key={image.path}
                             src={`/${image.path}`}
                             alt={image.alt}
                             title={image.alt}
