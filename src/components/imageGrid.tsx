@@ -18,7 +18,7 @@ export default function ImageGrid({ images }: { images: Image[] }) {
             <div className="flex mx-auto justify-evenly flex-row flex-wrap gap-2">
             {images.map(image => {
                 return (
-                    <div>
+                    <div key={image.path + "div"}>
                         <img
                             key={image.path}
                             src={`/${image.path}`}
