@@ -1,12 +1,13 @@
 "use client"
 import { useState } from "react";
+import ImagePopover from "./imagePopover";
 
 interface Image {
     path: string,
     alt: string
 }
 
-export default function ImageCarousel({ images, showAltAsInfo}: { images: Image[], showAltAsInfo: boolean }) {
+export default function ImageCarousel({ images }: { images: Image[]}) {
 
     const [currentImage, setCurrentImage] = useState<number>(0);
     const [imgPopup, setImgPopup] = useState<boolean>(false);
@@ -27,42 +28,15 @@ export default function ImageCarousel({ images, showAltAsInfo}: { images: Image[
         }
     }
 
-    function renderBig() {
-        return (
-            <div className="z-2 flex fixed top-0 right-0 z-0 bottom-0 left-0 bg-black bg-opacity-75 justify-center items-center" style={{ display: imgPopup ? 'flex' : 'none' }} onClick={() => setImgPopup(false)}>
-                <div className="flex flex-col z-10 bg-darkBG h-fit w-fit drop-shadow-xl " onClick={(e) => e.stopPropagation()}>
-                    <div className="h-[97%] w-[97%] mx-auto">
-                        <div className="h-[1%] text-xs"> &nbsp;</div>
-                        <img
-                            src={`/${images[currentImage].path}`}
-                            alt={images[currentImage].alt}
-                            title={images[currentImage].alt}
-                            className="object-contain max-h-[45rem] mx-auto"
-                        />
-                        {images.length > 1 ? (
-                            <div className="flex justify-between">
-                                <button className="hover:text-orangeHighlight max-sm:text-orangeHighlight" onClick={() => previousImage()}> Vorheriges Bild </button>
-                                <label className="text-center"> {currentImage + 1}/{images.length} </label>
-                                <button className="hover:text-orangeHighlight max-sm:text-orangeHighlight" onClick={() => nextImage()}> Nächstes Bild </button>
-                            </div>
-                        ) :
-                            <div className="h-[1%] text-xs"> &nbsp;</div>
-                        }
-                    </div>
-                </div>
-            </div>
-        )
-    }
-
     return (
         <div className="flex mx-auto flex-col">
-            {imgPopup && renderBig()}
+            {imgPopup && <ImagePopover images={images} currentImageIndex={currentImage} currentImage={images[currentImage]} setCurrentImage={setCurrentImage} imgPopup={imgPopup} setImgPopup={setImgPopup}/>}
             <img
                 src={`/${images[currentImage].path}`}
                 alt={images[currentImage].alt}
                 title={images[currentImage].alt}
                 onClick={() => setImgPopup(true)}
-                className="object-contain max-h-96"
+                className="object-contain max-h-96 hover:scale-105"
             />
             {images.length > 1 && (
                 <div className="flex justify-between">
@@ -71,9 +45,6 @@ export default function ImageCarousel({ images, showAltAsInfo}: { images: Image[
                     <button className="hover:text-orangeHighlight max-sm:text-orangeHighlight" onClick={() => nextImage()}> Nächstes Bild </button>
                 </div>
             )}
-            {showAltAsInfo &&
-                <label className="text-left mt-5">  {images[currentImage].alt} </label>
-            }
         </div>
     )
 }
