@@ -11,8 +11,8 @@ export default function Impressum() {
                 <div className="flex flex-col">
                     <div className="my-2 ml-4">
                         <p>Jonas Rettig<br />
-                        Anton-Knubel-Weg 64<br />
-                        48167, M&uuml;nster</p>
+                        Soester Str. 11<br />
+                        48155, M&uuml;nster</p>
                     </div>
                     <div className="mb-2">
                         <h2>Kontakt</h2>

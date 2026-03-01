@@ -78,8 +78,8 @@ export default function Datenschutzerklaerung() {
                     <p className="ml-4">Die verantwortliche Stelle f&uuml;r die Datenverarbeitung auf
                     dieser Website ist:</p> 
                         <p className="ml-6">Jonas Rettig<br />
-                        Anton-Knubel-Weg 64<br />
-                        48167 M&uuml;nster</p>
+                        Soester Str. 11<br />
+                        48155 M&uuml;nster</p>
                         <p className="ml-6">Telefon: +49 15755080848<br />
                             E-Mail: jonas@jrettig.dev</p>
                     <p className="ml-4">Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person, die allein oder gemeinsam mit anderen
