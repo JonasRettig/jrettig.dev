@@ -11,8 +11,9 @@ export default function About() {
                     <div className="flex flex-col w-4/6">
                         <b className="text-lg"> Ein (paar) Infos über mich </b>
                         <div> Moin, ich bin Jonas :) </div>
-                        <div> Ich lebe seit 24 Jahren in Münster und liebe diese Stadt genau so lange. </div>
-                        <div> In meiner Freizeit spiele ich gerne Spiel (ob Brett- oder Video- ist mir hier gleich), schau Filme oder verbinge einfach einen entspannten Abend mit meinen Freunden. </div>
+                        <div> Ich lebe seit 26 Jahren in Münster und liebe diese Stadt genau so lange. </div>
+                        <div> In meiner Freizeit spiele ich gerne Spiele (ob Brett- oder Video- ist mir hier gleich), schaue Filme oder verbringe einfach einen entspannten Abend mit meinen Freunden. </div>
+                        <div> Natürlich fahre ich auch gerne in den Urlaub. Da bin ich dann meistens mit den Museen der Stadt oder dem Fotografieren der Sehenswürdigkeiten der Stadt beschäftigt. </div>
                     </div>
                     <div className="relative w-2/6 ml-10">
                         <img src="/me_good.jpeg" alt="Ein Bild von Jonas Rettig. Er trägt ein Hemd und lächelt in die Kamera." className="absolute"/>
